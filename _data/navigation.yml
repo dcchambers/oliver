@@ -1,0 +1,8 @@
+- title: "About"
+  url: "/about"
+- title: "Blog"
+  url: "/blog"
+- title: "Projects"
+  url: "/coffee"
+- title: "Year in Review"
+  url: "/year-in-review"
