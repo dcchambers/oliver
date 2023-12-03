@@ -1,4 +1,35 @@
 body {
+  font-family: 'Hedvig Letters Serif', serif;
   font-size: 1rem;
   background-color: #FDF6E3;
+  #margin-left: 100px;
+  margin-top: 50px;
+}
+
+header {
+  max-width: 600px;
+  margin-left: 10%;
+}
+
+nav {
+  #margin-left:-40px;
+  background-color: #EEE8D5;
+
+
+  ul {
+    margin-left:-40px;
+    list-style: none;
+  }
+  
+  li {
+    display: inline-block;
+    margin-right: 10px; /* add spacing between items */
+  }
+}
+
+main {
+  background-color: aqua;
+  max-width: 600px;
+  margin-left: 10%;
+
 }
