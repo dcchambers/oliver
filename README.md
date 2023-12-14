@@ -1,7 +1,7 @@
 # oliver
 
 <p align="center">
-  <img src=".github/assets/oliver-brand-image.png" />
+  <img src=".github/assets/oliver-brand-image.png" width="500"/>
 </p>
 
 <div align="center">
