@@ -19,7 +19,9 @@ _oliver_ is an elegant, simple jekyll theme with minimal configuration.
 ## Getting Started
 
 > [!IMPORTANT]
-> _oliver_ is in heavy active development and is not yet ready for public use. Please see the [developent wiki][dev] or the [project board] for more information.
+> _oliver_ is in heavy active development and is not yet ready for public use.
+>
+> Please see the [developent wiki][dev] or the [project board] for more information.
 
 Use _oliver_ with your site.
 
