@@ -18,12 +18,12 @@ _oliver_ is an elegant, simple jekyll theme with minimal configuration.
 
 ## Getting Started
 
+Use the _oliver_ theme on your site.
+
 > [!IMPORTANT]
-> _oliver_ is in heavy active development and is not yet ready for public use.
+> _oliver_ is in active development and is not yet ready for public use.
 >
 > Please see the [developent wiki][dev] or the [project board] for more information.
-
-Use _oliver_ with your site.
 
 ### Install
 
@@ -35,9 +35,20 @@ Use _oliver_ with your site.
 
 ## Contributing
 
+### Development
+
+**Requirements**
+
+- Mise
+- Ruby 4.x
+- Bundler
+
+**Run Locally**
+
 ```
+mise install
 bundle install
-bundle exec jekyll s
+bundle exec jekyll serve
 ```
 
 <!-- refs -->
