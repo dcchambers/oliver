@@ -13,4 +13,8 @@ Gem::Specification.new do |spec|
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_data|_layouts|_includes|_sass|LICENSE|README|_config\.yml)!i) }
 
   spec.add_runtime_dependency "jekyll", "~> 4.3"
+  spec.add_runtime_dependency "logger", "~> 1.7"
+  spec.add_runtime_dependency "csv", "~> 3.3"
+  spec.add_runtime_dependency "base64", "~> 0.3"
+  spec.add_runtime_dependency "bigdecimal", "~> 4.0"
 end
