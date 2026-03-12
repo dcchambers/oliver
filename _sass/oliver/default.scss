@@ -1,18 +1,31 @@
 body {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-family: 'Hedvig Letters Serif', serif;
   font-size: 1rem;
   background-color: #FDF6E3;
-  #margin-left: 100px;
   margin-top: 50px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 header {
   max-width: 600px;
   margin-left: 10%;
+  font-family: "DM Serif Text", serif;
+
+  #title {
+    font-weight: 400;
+    font-size: 2em;
+    font-style: italic;
+  }
+
 }
 
 nav {
-  #margin-left:-40px;
   background-color: #EEE8D5;
 
 
@@ -29,7 +42,7 @@ nav {
 
 main {
   background-color: aqua;
-  max-width: 600px;
   margin-left: 10%;
-
+  margin-right: 10%;
+  max-width:600px;
 }

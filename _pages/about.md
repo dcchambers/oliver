@@ -3,4 +3,4 @@ layout: page
 permalink: /about
 ---
 
-Oliver is an elegant, simple jekyll theme with minimal configuration.
+*oliver* is an elegant and simple Jekyll theme with minimal configuration.
