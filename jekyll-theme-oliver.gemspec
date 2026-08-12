@@ -8,7 +8,14 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://github.com/dcchambers/oliver"
   spec.license       = "MIT"
 
-  spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_data|_layouts|_includes|_sass|LICENSE|README|_config\.yml)!i) }
+  spec.required_ruby_version = ">= 3.1"
+
+  spec.metadata = {
+    "source_code_uri" => "https://github.com/dcchambers/oliver",
+    "rubygems_mfa_required" => "true",
+  }
+
+  spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_layouts|_includes|_sass|LICENSE|README|_config\.yml)!i) }
 
   spec.add_runtime_dependency "jekyll", "~> 4.3"
   spec.add_runtime_dependency "logger", "~> 1.7"
