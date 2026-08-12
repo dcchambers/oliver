@@ -5,7 +5,7 @@ body {
   font-family: "IBM Plex Sans", sans-serif;
   font-weight: 400;
   font-size: 1rem;
-  background-color: #FDF6E3;
+  background-color: #FAF4ED;
   margin: 50px 0 0;
 }
 
@@ -24,7 +24,6 @@ body {
 }
 
 .site-nav {
-  background-color: #EEE8D5;
 
   ul {
     list-style: none;
@@ -36,6 +35,10 @@ body {
     display: inline-block;
     margin-right: 10px;
   }
+}
+
+a:visited {
+  color: #5C5C5C;
 }
 
 .skip-link {
