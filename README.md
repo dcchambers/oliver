@@ -27,7 +27,24 @@ Use the _oliver_ theme on your site.
 
 ### Install
 
-- Add to your Gemfile.
+Add the theme to your `Gemfile`:
+
+```ruby
+gem "jekyll-theme-oliver"
+```
+
+Set the theme in `_config.yml`:
+
+```yaml
+theme: jekyll-theme-oliver
+```
+
+Install dependencies and run the site locally:
+
+```
+bundle install
+bundle exec jekyll serve
+```
 
 ### Learn
 
@@ -40,7 +57,7 @@ Use the _oliver_ theme on your site.
 **Requirements**
 
 - Mise
-- Ruby 4.x
+- Ruby 4.0.6
 - Bundler
 
 **Run Locally**
