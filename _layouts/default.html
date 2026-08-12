@@ -1,31 +1,32 @@
 ---
 ---
-
 <!DOCTYPE html>
-
-  <head>
-    <link rel="stylesheet" href="/assets/css/main.css">
-  </head>
-
+<html lang="{{ site.lang | default: "en" }}">
+  {% include head.html %}
   <body>
+    <a class="skip-link" href="#content">Skip to content</a>
 
-    <header>
-      <a id="title" href="/">{{ site.title }}</a>
-      <nav>
+    <header class="site-header">
+      <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title }}</a>
+      {% if site.data.navigation %}
+      <nav class="site-nav">
         <ul>
           {% for link in site.data.navigation %}
           <li>
-            <a href="{{link.url}}"> {{link.title}} </a>
+            <a href="{{ link.url }}">{{ link.title }}</a>
           </li>
           {% endfor %}
         </ul>
       </nav>
+      {% endif %}
     </header>
 
-    <main>
+    <main id="content" class="site-main">
       {{ content }}
     </main>
 
+    <footer class="site-footer">
+      <p>&copy; {{ site.time | date: "%Y" }} {{ site.author.name }}</p>
+    </footer>
   </body>
-
 </html>
