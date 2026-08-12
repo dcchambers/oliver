@@ -21,6 +21,7 @@ body {
   font-weight: 400;
   font-size: 2em;
   font-style: italic;
+  text-decoration: none;
 }
 
 .site-nav {
@@ -35,10 +36,18 @@ body {
     display: inline-block;
     margin-right: 10px;
   }
+
+  a {
+    text-decoration: none;
+  }
 }
 
-a:visited {
+a {
   color: #5C5C5C;
+}
+
+a:hover {
+  color: #000;
 }
 
 .skip-link {
