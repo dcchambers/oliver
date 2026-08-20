@@ -12,19 +12,19 @@ layout: default
     {% endif %}
   </header>
   {{ content }}
-  {% if page.categories and page.categories != empty %}
-  {% assign post_taxonomy = page.categories %}
-  {% assign post_taxonomy_path = "/categories/" %}
-  {% elsif page.tags and page.tags != empty %}
-  {% assign post_taxonomy = page.tags %}
-  {% assign post_taxonomy_path = "/tags/" %}
-  {% endif %}
-  {% if post_taxonomy %}
+  {% if page.categories.size > 0 or page.tags.size > 0 %}
   <footer class="post-footer">
     <p>Filed under:
-      {% for taxonomy in post_taxonomy %}
-      {% unless forloop.first %}, {% endunless %}
-      <a href="{{ post_taxonomy_path | relative_url }}#{{ taxonomy | slugify }}">{{ taxonomy }}</a>
+      {% assign taxonomy_count = 0 %}
+      {% for category in page.categories %}
+      {% if taxonomy_count > 0 %}, {% endif %}
+      <a href="{{ "/categories/" | relative_url }}#{{ category | slugify }}">{{ category }}</a>
+      {% assign taxonomy_count = taxonomy_count | plus: 1 %}
+      {% endfor %}
+      {% for tag in page.tags %}
+      {% if taxonomy_count > 0 %}, {% endif %}
+      <a href="{{ "/tags/" | relative_url }}#{{ tag | slugify }}">{{ tag }}</a>
+      {% assign taxonomy_count = taxonomy_count | plus: 1 %}
       {% endfor %}
     </p>
   </footer>
