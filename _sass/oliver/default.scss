@@ -46,6 +46,18 @@ body {
   }
 }
 
+.post-list article {
+  display: grid;
+  grid-template-columns: 6rem minmax(0, 1fr);
+  column-gap: 0.5rem;
+  align-items: baseline;
+}
+
+.post-list time {
+  font-family: inherit;
+  white-space: nowrap;
+}
+
 a {
   color: #5C5C5C;
 }
