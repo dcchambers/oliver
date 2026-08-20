@@ -12,4 +12,21 @@ layout: default
     {% endif %}
   </header>
   {{ content }}
+  {% if page.categories.size > 0 or page.tags.size > 0 %}
+  <footer class="post-footer">
+    <p>Filed under:
+      {% assign taxonomy_count = 0 %}
+      {% for category in page.categories %}
+      {% if taxonomy_count > 0 %}, {% endif %}
+      <a href="{{ "/categories/" | relative_url }}#{{ category | slugify }}">{{ category }}</a>
+      {% assign taxonomy_count = taxonomy_count | plus: 1 %}
+      {% endfor %}
+      {% for tag in page.tags %}
+      {% if taxonomy_count > 0 %}, {% endif %}
+      <a href="{{ "/tags/" | relative_url }}#{{ tag | slugify }}">{{ tag }}</a>
+      {% assign taxonomy_count = taxonomy_count | plus: 1 %}
+      {% endfor %}
+    </p>
+  </footer>
+  {% endif %}
 </article>

@@ -1,0 +1,24 @@
+---
+layout: page
+---
+
+{% assign taxonomy_terms = site[page.taxonomy] %}
+{% if taxonomy_terms.size > 0 %}
+{% for taxonomy_term in taxonomy_terms %}
+<section id="{{ taxonomy_term[0] | slugify }}">
+  <h2>{{ taxonomy_term[0] }}</h2>
+  <ul>
+    {% for post in taxonomy_term[1] %}
+    <li>
+      <article>
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %Y" }}</time>
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </article>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endfor %}
+{% else %}
+<p>No {{ page.taxonomy }} yet.</p>
+{% endif %}
